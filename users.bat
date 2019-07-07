@@ -1,0 +1,1 @@
+net user "Studio Gebruiker" /ADD
