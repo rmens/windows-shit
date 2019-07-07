@@ -4,8 +4,8 @@
 #>
 
 # Ingebouwde apps
-Get-AppxPackage -AllUsers *3dbuilder* | Remove-AppxPackage -AllUsers -AllUsers
-Get-AppxPackage -AllUsers *windowsalarms* | Remove-AppxPackage -AllUsers -AllUsers
+Get-AppxPackage -AllUsers *3dbuilder* | Remove-AppxPackage -AllUsers
+Get-AppxPackage -AllUsers *windowsalarms* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *windowscommunicationsapps* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *windowscamera* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *officehub* | Remove-AppxPackage -AllUsers
