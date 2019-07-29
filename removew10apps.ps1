@@ -40,5 +40,8 @@ Get-AppxPackage -AllUsers Microsoft.MixedReality.Portal | Remove-AppxPackage -Al
 Get-AppxPackage -AllUsers *3dviewer* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers Microsoft.Messaging | Remove-AppxPackage -AllUsers
 
+# Online componenten (Windows Store etc)
+Get-AppXProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online -AllUsers
+
 # Lijstje maken van geinstalleerde apps
 #Get-AppxPackage -AllUsers | Select Name, PackageFullName
