@@ -10,4 +10,4 @@ CALL sudo.bat C:\Users\Public\power.bat
 CALL sudo.bat C:\Users\Public\users.bat
 CALL sudo.bat C:\Users\Public\time.bat
 CALL sudo.bat C:\Users\Public\removeod.bat
-START sudo.bat C:\Users\Public\apps.exe
+START C:\Users\Public\apps.exe
