@@ -10,5 +10,5 @@ CALL sudo.bat C:\Users\Public\power.bat
 CALL sudo.bat C:\Users\Public\users.bat
 CALL sudo.bat C:\Users\Public\time.bat
 CALL sudo.bat C:\Users\Public\removeod.bat
-CALL sudo.bat C:\Users\Pubic\wallpaper.bat
+CALL sudo.bat C:\Users\Public\wallpaper.bat
 START C:\Users\Public\apps.exe
