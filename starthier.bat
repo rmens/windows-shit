@@ -9,7 +9,7 @@ curl -o C:\Users\Public\wallpaper.bmp http://paulbourke.net/dataformats/bmp/samp
 curl -o C:\Users\Public\wallpaper.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/wallpaper.ps1
 curl -o C:\Users\Public\Set-Wallpaper.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/Set-Wallpaper.ps1
 CALL sudo.bat powershell.exe -noexit -executionpolicy bypass -file C:\Users\Public\removew10apps.ps1
-CALL sudo.bat powershell.exe -noexit -executionpolicy bypass -file C:\Users\Public\Set-Wallpaper.ps1
+CALL sudo.bat powershell.exe -noexit -executionpolicy bypass -file C:\Users\Public\wallpaper.ps1
 CALL sudo.bat C:\Users\Public\power.bat
 CALL sudo.bat C:\Users\Public\users.bat
 CALL sudo.bat C:\Users\Public\time.bat
