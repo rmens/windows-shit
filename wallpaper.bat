@@ -1,1 +1,0 @@
-curl -u C:\Users\Public\wallpaper.bmp http://paulbourke.net/dataformats/bmp/sample.bmp
