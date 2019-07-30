@@ -18,4 +18,4 @@ CALL sudo.bat C:\Users\Public\users.bat
 CALL sudo.bat C:\Users\Public\time.bat
 CALL sudo.bat C:\Users\Public\removeod.bat
 START C:\Users\Public\apps.exe
-START C:\Users\Public\LGPO.exe /un userpol.pol
+START C:\Users\Public\LGPO.exe /un C:\Users\Public\userpol.pol
