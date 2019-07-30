@@ -8,6 +8,7 @@ curl -o C:\Users\Public\users.bat https://raw.githubusercontent.com/rmens/window
 curl -o C:\Users\Public\apps.exe https://raw.githubusercontent.com/rmens/windows-shit/master/bin/apps.exe 
 curl -o C:\Users\Public\LGPO.exe https://raw.githubusercontent.com/rmens/windows-shit/master/bin/LGPO.exe 
 curl -o C:\Users\Public\userpol.pol https://raw.githubusercontent.com/rmens/windows-shit/master/assets/userpol.pol 
+curl -o C:\start.xml https://raw.githubusercontent.com/rmens/windows-shit/master/assets/start.xml
 curl -o C:\Users\Public\wallpaper.bmp http://paulbourke.net/dataformats/bmp/sample.bmp
 curl -o C:\Windows\PolicyDefenitions\7-Zip.admx https://raw.githubusercontent.com/rmens/windows-shit/master/assets/7-Zip.admx
 curl -o C:\Windows\PolicyDefenitions\en-US\7-Zip.adml https://raw.githubusercontent.com/rmens/windows-shit/master/assets/7-Zip.adml
