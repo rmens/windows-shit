@@ -1,0 +1,1 @@
+Set-WinSystemLocale nl-NL
