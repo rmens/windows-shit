@@ -43,5 +43,8 @@ Get-AppxPackage -AllUsers Microsoft.Messaging | Remove-AppxPackage -AllUsers
 # Online componenten (Windows Store etc)
 Get-AppXProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online -AllUsers
 
+# SMBv1 wegens veiligheid
+Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol
+
 # Lijstje maken van geinstalleerde apps
 #Get-AppxPackage -AllUsers | Select Name, PackageFullName
