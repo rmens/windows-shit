@@ -55,7 +55,7 @@ DWORD:1
 User
 Software\Microsoft\Windows\CurrentVersion\Policies\System
 Wallpaper
-SZ:c:\\users\\public\\wallpaper.bmp
+SZ:c:\\users\\public\\wallpaper.png
 
 User
 Software\Microsoft\Windows\CurrentVersion\Policies\System
