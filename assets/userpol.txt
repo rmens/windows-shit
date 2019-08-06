@@ -19,11 +19,6 @@ DWORD:1
 
 User
 Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
-NoClose
-DWORD:1
-
-User
-Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
 NoDrives
 DWORD:15
 
