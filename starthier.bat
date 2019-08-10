@@ -1,6 +1,7 @@
 curl -o C:\Windows\sudo.bat https://raw.githubusercontent.com/zh0ul/sudo.bat/master/sudo.bat
 curl -o C:\Users\Public\power.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/power.bat 
 curl -o C:\Users\Public\time.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/time.bat 
+curl -o C:\Windows\System32\GroupPolicy\Machine\Scripts\Startup\filer.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/filer.bat 
 curl -o C:\Users\Public\removew10apps.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/removew10apps.ps1 
 curl -o C:\Users\Public\lang.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/lang.ps1 
 curl -o C:\Users\Public\workgroup.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/workgroup.ps1 
