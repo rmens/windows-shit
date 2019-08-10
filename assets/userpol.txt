@@ -25,7 +25,7 @@ DWORD:1
 User
 Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
 NoViewOnDrive
-DWORD:7
+DELETE
 
 User
 Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
