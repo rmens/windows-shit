@@ -17,7 +17,6 @@ Get-AppxPackage -AllUsers *bingfinance* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *zunevideo* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *bingnews* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *onenote* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *people* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *windowsphone* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *photos* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *windowsstore* | Remove-AppxPackage -AllUsers
