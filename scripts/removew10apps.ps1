@@ -44,7 +44,12 @@ Get-AppxPackage -AllUsers Microsoft.Messaging | Remove-AppxPackage -AllUsers
 Get-AppXProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online -AllUsers
 
 # SMBv1 wegens veiligheid
-Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol
+Disable-WindowsOptionalFeature -Online -FeatureName "SMB1Protocol"
 
+# We hoeven niets meer met IE11
+Disable-WindowsOptionalFeature -Online -FeatureName "Interet-Explorer-Optional-amd64"
+
+# XPS printer is niet echt nuttig
+Disable-WindowsOptionalFeature -Online -FeatureName "Printing-XPSServices-Features"
 # Lijstje maken van geinstalleerde apps
 #Get-AppxPackage -AllUsers | Select Name, PackageFullName
