@@ -7,7 +7,9 @@
 - Kies VS (internationaal) als toetsenbordindeling
 - Voeg geen tweede toetsenbordindeling toe
 - Kies “Instellen voor persoonlijk gebruik”
-______
+
+![](https://i.imgur.com/uMbD4wV.png)
+
 - Kies voor “Offlineaccount”
 - Bevestig dit met “nee” in het volgende scherm
 - Geef de naam van het beheer-account op (Bijvoorbeeld: “Studio Beheerder”
@@ -28,6 +30,9 @@ ______
 - Commando: curl -o start.bat http://is.gd/startdeploy -L
 - Sluit de terminal en klik rechts op ‘start.bat’ op je desktop
 - Kies voor ‘als administrator uitvoeren’
+
+![](https://i.imgur.com/CJKDAeq.png)
+
 - Wacht tot alle vensters zichzelf gesloten hebben
 - Draai start.bat nogmaals als administrator voor de zekerheid
 ______
