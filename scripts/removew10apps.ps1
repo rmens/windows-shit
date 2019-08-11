@@ -47,7 +47,7 @@ Get-AppXProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online -AllU
 Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName "SMB1Protocol"
 
 # We hoeven niets meer met IE11
-Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName "Interet-Explorer-Optional-amd64"
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName "Internet-Explorer-Optional-amd64"
 
 # XPS printer is niet echt nuttig
 Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName "Printing-XPSServices-Features"
