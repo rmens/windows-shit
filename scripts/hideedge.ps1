@@ -1,0 +1,1 @@
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "AccountProtection_MicrosoftAccount_Disconnected" -Type DWord -Value 1
