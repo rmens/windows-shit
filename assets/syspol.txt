@@ -3,6 +3,11 @@
 ; Source file:  C:\Users\Public\gpo\registry.pol
 
 Computer
+Software\Policies\Microsoft\MicrosoftEdge\Main
+PreventFirstRunPage
+DWORD:1
+
+Computer
 Software\Policies\Microsoft\Windows\OneDrive
 DisableFileSyncNGSC
 DWORD:1
