@@ -26,8 +26,8 @@ ______
 # Configratie na installatie
 - Installeer alle drivers en updates
 - Open cmd.exe 
-- Commando: cd “C:\Users\Studio Beheerder\Desktop” _(afhankelijk van admin-gebruiker die je gemaakt hebt)_
-- Commando: curl -o start.bat http://is.gd/startdeploy -L
+- Commando: ```cd “C:\Users\Studio Beheerder\Desktop”``` _(afhankelijk van admin-gebruiker die je gemaakt hebt)_
+- Commando: ```curl -o start.bat http://is.gd/startdeploy -L```
 - Sluit de terminal en klik rechts op ‘start.bat’ op je desktop
 - Kies voor ‘als administrator uitvoeren’
 
