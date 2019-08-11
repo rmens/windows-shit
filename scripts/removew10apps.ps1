@@ -1,6 +1,5 @@
 <#
    Windows 10 uitkleden
-   Laatste update: 2019-08-05
 #>
 
 # Ingebouwde apps
@@ -25,10 +24,8 @@ Get-AppxPackage -AllUsers *windowsstore* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *bingsports* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *soundrecorder* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *bingweather* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *xbox* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers *bing* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers Microsoft.Zune* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.Xbox* | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers Microsoft.YourPhone | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers Microsoft.WindowsMaps | Remove-AppxPackage -AllUsers
 Get-AppxPackage -AllUsers Microsoft.Print3D | Remove-AppxPackage -AllUsers
