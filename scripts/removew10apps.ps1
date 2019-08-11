@@ -1,6 +1,5 @@
 <#
    Windows 10 uitkleden
-   Laatste update: 2019-08-05
 #>
 
 # Ingebouwde apps
