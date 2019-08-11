@@ -1,4 +1,4 @@
-# Installatie Windows 10
+# Installatie Windows 10 Omroepstichting ZuidWest
 - Start de installatie van Windows 10 Pro
 - Voer tijdens de installatie geen serienummer in
 - Kies voor een aangepaste installatie
