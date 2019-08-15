@@ -125,7 +125,7 @@ DWORD:1
 User
 Software\Policies\Microsoft\Windows\Explorer
 StartLayoutFile
-EXSZ:c:\\start.xml
+EXSZ:c:\\windows\\deploy\\start.xml
 
 User
 Software\Policies\Microsoft\Windows\Personalization
