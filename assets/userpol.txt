@@ -50,7 +50,7 @@ DWORD:1
 User
 Software\Microsoft\Windows\CurrentVersion\Policies\System
 Wallpaper
-SZ:c:\\users\\public\\wallpaper.png
+SZ:c:\\windows\\deploy\\wallpaper.png
 
 User
 Software\Microsoft\Windows\CurrentVersion\Policies\System
@@ -125,7 +125,7 @@ DWORD:1
 User
 Software\Policies\Microsoft\Windows\Explorer
 StartLayoutFile
-EXSZ:c:\\start.xml
+EXSZ:c:\\windows\\deploy\\start.xml
 
 User
 Software\Policies\Microsoft\Windows\Personalization
