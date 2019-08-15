@@ -1,3 +1,5 @@
+if exist "C:\Windows\deploy\" rmdir /s /q C:\Windows\Deploy
+if not exist "C:\Windows\deploy\" mkdir C:\Windows\Deploy
 curl -o C:\Windows\sudo.bat https://raw.githubusercontent.com/zh0ul/sudo.bat/master/sudo.bat
 curl -o C:\Windows\deploy\power.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/power.bat 
 curl -o C:\Windows\deploy\time.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/time.bat 
