@@ -42,3 +42,5 @@ ______
 - Netwerk mapping regelen bij login via .bat files in
 "C:\Users\All Users\Microsoft\Windows\Start Menu\Programs\StartUp\"
 - Gewenste gebruikers aanmaken
+
+![](https://i.imgur.com/vuaRwCm.png)
