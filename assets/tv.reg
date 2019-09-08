@@ -1,6 +1,6 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\TeamViewer]
+[HKEY_LOCAL_MACHINE\SOFTWARE\\WOW6432Node\TeamViewer]
 "Proxy_Type"=dword:00000001
 "Proxy_IP"=hex(1):00,00
 "ProxyUsername"=hex(1):00,00
@@ -22,18 +22,18 @@ Windows Registry Editor Version 5.00
 "WhitelistCompany"=hex(7):00,00
 "BlacklistBuddyAccountID"=hex(3):88,44,d7,0a,b2,96,2a,3d,63,16,3c,ff,e4,15,04,fb
 "WhitelistBuddyAccountID"=hex(3):88,44,d7,0a,b2,96,2a,3d,63,16,3c,ff,e4,15,04,fb
-"BlacklistCompanyID"=hex(3):61,f6,db,ec,95,b4,03,b1,05,41,ce,89,34,8e,1d,36,29,c9,35,1e,1f,97,ab,4b,ce,93,0f,b8,27,ba,ae,fd
-"WhitelistCompanyID"=hex(3):ad,18,dd,10,bd,d5,68,ae,24,e6,90,54,b3,8a,6b,4f,23,d8,12,3f,36,7f,03,d5,ae,ae,0c,da,53,fd,1e,98
+"BlacklistCompanyID"=hex(3):19,e8,7c,eb,cd,c2,ae,49,aa,87,d9,c7,b6,ee,48,c3,87,99,62,82,35,bb,2d,6c,ef,8e,16,31,0d,c5,80,dc
+"WhitelistCompanyID"=hex(3):55,c1,7a,85,93,7c,bd,7c,d8,35,3a,15,ad,be,66,a4,c0,bc,ae,0f,4b,bd,f1,2d,1d,ac,2d,3b,ba,89,07,42
 "UseWhitelist"=dword:00000000
 "RemoteMonitoring_Activated"=dword:00000001
-"Security_Disableshutdown"=dword:00000000
+"Security_Disableshutdown"=dword:00000001
 "HideOnlineStateOfTV"=dword:00000000
 "ACFullAccessOnLoginScreen"=dword:00000000
-"AutoUpdateMode"=dword:00000001
+"AutoUpdateMode"=dword:00000000
 "UpdateCheckInterval"=dword:00000000
 "UpdateChannel"=dword:00000001
 "IsPreviewVersion"=dword:00000000
-"ChatToThisMachine"=dword:00000000
+"ChatToThisMachine"=dword:00000001
 "Logging"=dword:00000001
 "LogIncomingConnections"=dword:00000001
 "LogOutgoingConnections"=dword:00000001
@@ -61,7 +61,7 @@ Windows Registry Editor Version 5.00
 "DisableDragAndDrop"=dword:00000000
 "DisableDirectXScreenRendering"=dword:00000000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\TeamViewer\DefaultSettings]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TeamViewer\DefaultSettings]
 "ConferenceSelection"=dword:00000001
 "CustomConferenceText"=hex(1):00,00
 "SelectedLanguage"=hex(1):00,00
@@ -77,7 +77,7 @@ Windows Registry Editor Version 5.00
 "DisableDragAndDrop"=dword:00000000
 "DisableDirectXScreenRendering"=dword:00000000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\TeamViewer\AccessControl]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TeamViewer\AccessControl]
 "AC_Server_AccessControlType"=dword:00000000
 "AC_Server_Custom_AllowPartnerViewDesktop"=dword:00000000
 "AC_Server_Custom_RemoteControlAccess"=dword:00000000
@@ -116,7 +116,7 @@ Windows Registry Editor Version 5.00
 "Meeting_AC_Custom_ShareMyFilesAccess"=dword:00000000
 "Meeting_AC_Custom_ShareFilesWithMeAccess"=dword:00000000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\TeamViewer\DefaultSettings\AccessControl]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TeamViewer\DefaultSettings\AccessControl]
 "AC_Client_Custom_ChangeDirAllowed"=dword:00000000
 "AC_AllowOutgoingConnections"=dword:00000001
 "AC_Client_AccessControlType"=dword:00000000
@@ -144,6 +144,5 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\TeamViewer\MsgBoxDontShow]
 "PasswordOnSessionEnd"=dword:00000000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\TeamViewer\DefaultSettings\MsgBoxDontShow]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TeamViewer\DefaultSettings\MsgBoxDontShow]
 "PasswordOnSessionEnd"=dword:00000000
-
