@@ -1,6 +1,6 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\\WOW6432Node\TeamViewer]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TeamViewer]
 "Proxy_Type"=dword:00000001
 "Proxy_IP"=hex(1):00,00
 "ProxyUsername"=hex(1):00,00
