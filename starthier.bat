@@ -15,7 +15,7 @@ curl -o C:\Windows\deploy\userpol.txt https://raw.githubusercontent.com/rmens/wi
 curl -o C:\Windows\deploy\syspol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/syspol.txt 
 curl -o C:\Windows\deploy\firefoxpol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/firefoxpol.txt 
 curl -o C:\Windows\deploy\start.xml https://raw.githubusercontent.com/rmens/windows-shit/master/assets/start.xml
-curl -o C:\Windows\deploy\wallpaper.png http://zuidwesttv.nl/images/teksttv/zwfm-background.png
+curl -o C:\Windows\deploy\wallpaper.png https://raw.githubusercontent.com/rmens/windows-shit/master/assets/wallpaper.png
 curl -o C:\Windows\PolicyDefenitions\7-Zip.admx https://raw.githubusercontent.com/rmens/windows-shit/master/assets/7-Zip.admx
 curl -o C:\Windows\PolicyDefenitions\en-US\7-Zip.adml https://raw.githubusercontent.com/rmens/windows-shit/master/assets/7-Zip.adml
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\userpol.txt /w C:\Windows\deploy\userpol.pol
