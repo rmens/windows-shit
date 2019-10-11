@@ -19,8 +19,6 @@ curl -o C:\Windows\deploy\wallpaper.png https://raw.githubusercontent.com/rmens/
 curl -o C:\Windows\deploy\ZWFM-wallpaper.png https://raw.githubusercontent.com/rmens/windows-shit/master/assets/ZWFM-wallpaper.png
 curl -o C:\Windows\deploy\ZWTV-wallpaper.png https://raw.githubusercontent.com/rmens/windows-shit/master/assets/ZWTV-wallpaper.png
 curl -o C:\Windows\deploy\ZWUP-wallpaper.png https://raw.githubusercontent.com/rmens/windows-shit/master/assets/ZWUP-wallpaper.png
-curl -o C:\Windows\PolicyDefenitions\7-Zip.admx https://raw.githubusercontent.com/rmens/windows-shit/master/assets/7-Zip.admx
-curl -o C:\Windows\PolicyDefenitions\en-US\7-Zip.adml https://raw.githubusercontent.com/rmens/windows-shit/master/assets/7-Zip.adml
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\userpol.txt /w C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\syspol.txt /w C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\firefoxpol.txt /w C:\Windows\deploy\firefoxpol.pol
