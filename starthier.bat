@@ -16,6 +16,7 @@ curl -o C:\Windows\deploy\syspol.txt https://raw.githubusercontent.com/rmens/win
 curl -o C:\Windows\deploy\firefoxpol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/firefoxpol.txt 
 curl -o C:\Windows\deploy\start.xml https://raw.githubusercontent.com/rmens/windows-shit/master/assets/start.xml
 curl -o C:\Windows\deploy\wallpaper.png http://zuidwesttv.nl/images/teksttv/zwfm-background.png
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\userpol.txt /w C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\syspol.txt /w C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\firefoxpol.txt /w C:\Windows\deploy\firefoxpol.pol
