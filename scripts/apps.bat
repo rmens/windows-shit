@@ -1,7 +1,7 @@
-choco install firefox
-choco install thunderbird
-choco install vlc
-choco install libreoffice-fresh
-choco install audacity
-choco install teamviewer.host
-choco install paint.net
+choco install firefox -y
+choco install thunderbird -y
+choco install vlc -y
+choco install libreoffice-fresh -y
+choco install audacity -y
+choco install teamviewer.host -y
+choco install paint.net -7
