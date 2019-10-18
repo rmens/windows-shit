@@ -37,7 +37,7 @@ ______
 - Draai start.bat nogmaals als administrator voor de zekerheid
 ______
 # Handmatige stappen/overrides
-- TeamViewer downloaden en configureren
+- TeamViewer configureren
 - Printer(s) installeren
 - Netwerk mapping regelen bij login via .bat files in
 "C:\Users\All Users\Microsoft\Windows\Start Menu\Programs\StartUp\"
