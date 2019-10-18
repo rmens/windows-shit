@@ -3,7 +3,7 @@ if not exist "C:\Windows\deploy\" mkdir C:\Windows\deploy
 curl -o C:\Windows\sudo.bat https://raw.githubusercontent.com/zh0ul/sudo.bat/master/sudo.bat
 curl -o C:\Windows\deploy\power.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/power.bat 
 curl -o C:\Windows\deploy\time.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/time.bat 
-curl -o C:\Windows\deploy\time.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/apps.bat 
+curl -o C:\Windows\deploy\apps.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/apps.bat 
 curl -o "C:\Users\All Users\Microsoft\Windows\Start Menu\Programs\StartUp\filer.bat" https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/filer.bat 
 curl -o C:\Windows\deploy\removew10apps.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/removew10apps.ps1 
 curl -o C:\Windows\deploy\lang.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/lang.ps1 
@@ -29,7 +29,7 @@ CALL sudo.bat C:\Windows\deploy\power.bat
 CALL sudo.bat C:\Windows\deploy\users.bat
 CALL sudo.bat C:\Windows\deploy\time.bat
 CALL sudo.bat C:\Windows\deploy\removeod.bat
-CALL apps.bat C:\Windows\deploy\apps.bat
 START C:\Windows\deploy\LGPO.exe /un C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\firefoxpol.pol
+CALL apps.bat C:\Windows\deploy\apps.bat
