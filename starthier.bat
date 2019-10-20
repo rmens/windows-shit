@@ -33,4 +33,4 @@ CALL sudo.bat C:\Windows\deploy\removeod.bat
 START C:\Windows\deploy\LGPO.exe /un C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\firefoxpol.pol
-CALL apps.bat C:\Windows\deploy\apps.bat
+CALL sudo.bat C:\Windows\deploy\apps.bat
