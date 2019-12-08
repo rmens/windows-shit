@@ -39,9 +39,6 @@ Get-AppxPackage -AllUsers Microsoft.Messaging | Remove-AppxPackage -AllUsers
 # Online componenten (Windows Store etc)
 Get-AppXProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online -AllUsers
 
-# SMBv1 wegens backup NAS
-Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName "SMB1Protocol"
-
 # We hoeven niets meer met IE11
 Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName "Internet-Explorer-Optional-amd64"
 
