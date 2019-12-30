@@ -107,6 +107,11 @@ Software\Policies\Microsoft\Windows\WindowsUpdate\AU
 AllowMUUpdateService
 DELETE
 
+Computer
+Software\Microsoft\Windows\CurrentVersion\Policies\System
+HideFastUserSwitching
+DWORD:1
+
 ; PARSING COMPLETED.
 ; ----------------------------------------------------------------------
 
