@@ -42,6 +42,9 @@ Get-AppXProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online -AllU
 # We hoeven niets meer met IE11
 Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName "Internet-Explorer-Optional-amd64"
 
+# SMBv1 is onveilig en niet meer nodig (tenzij je de back-up NAS gebruikt)
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName "SMB1Protocol"
+
 # XPS printer is niet echt nuttig
 Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName "Printing-XPSServices-Features"
 
