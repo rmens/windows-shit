@@ -3,38 +3,70 @@
 #>
 
 # Ingebouwde apps
-Get-AppxPackage -AllUsers *3dbuilder* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *windowsalarms* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *windowscommunicationsapps* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *windowscamera* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *officehub* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *skypeapp* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *getstarted* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *zunemusic* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *windowsmaps* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *solitairecollection* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *bingfinance* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *zunevideo* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *bingnews* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *onenote* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *windowsphone* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *photos* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *windowsstore* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *bingsports* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *soundrecorder* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *bingweather* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *bing* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.Zune* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.YourPhone | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.WindowsMaps | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.Print3D | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.OneConnect | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.MicrosoftStickyNotes | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.MSPaint | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *feedback* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.MixedReality.Portal | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers *3dviewer* | Remove-AppxPackage -AllUsers
-Get-AppxPackage -AllUsers Microsoft.Messaging | Remove-AppxPackage -AllUsers
+$apps = @(
+    "Microsoft.3DBuilder"
+    "Microsoft.Appconnector"
+    "Microsoft.BingFinance"
+    "Microsoft.BingNews"
+    "Microsoft.BingSports"
+    "Microsoft.BingTranslator"
+    "Microsoft.BingWeather"
+    "Microsoft.FreshPaint"
+    "Microsoft.GamingServices"
+    "Microsoft.Microsoft3DViewer"
+    "Microsoft.MicrosoftOfficeHub"
+    "Microsoft.MicrosoftPowerBIForWindows"
+    "Microsoft.MicrosoftSolitaireCollection"
+    "Microsoft.MicrosoftStickyNotes"
+    "Microsoft.MinecraftUWP"
+    "Microsoft.NetworkSpeedTest"
+    "Microsoft.Office.OneNote"
+    "Microsoft.OneConnect"
+    "Microsoft.People"
+    "Microsoft.Print3D"
+    "Microsoft.SkypeApp"
+    "Microsoft.Wallet"
+    "Microsoft.Windows.Photos"
+    "Microsoft.WindowsAlarms"
+    "Microsoft.WindowsCalculator"
+    "Microsoft.WindowsCamera"
+    "microsoft.windowscommunicationsapps"
+    "Microsoft.WindowsMaps"
+    "Microsoft.WindowsPhone"
+    "Microsoft.WindowsSoundRecorder"
+    "Microsoft.Xbox.TCUI"
+    "Microsoft.XboxApp"
+    "Microsoft.XboxGameOverlay"
+    "Microsoft.XboxGamingOverlay"
+    "Microsoft.XboxSpeechToTextOverlay"
+    "Microsoft.YourPhone"
+    "Microsoft.ZuneMusic"
+    "Microsoft.ZuneVideo"
+    "Microsoft.CommsPhone"
+    "Microsoft.ConnectivityStore"
+    "Microsoft.GetHelp"
+    "Microsoft.Getstarted"
+    "Microsoft.Messaging"
+    "Microsoft.Office.Sway"
+    "Microsoft.OneConnect"
+    "Microsoft.WindowsFeedbackHub"
+    "Microsoft.Microsoft3DViewer"
+    "Microsoft.BingFoodAndDrink"
+    "Microsoft.BingHealthAndFitness"
+    "Microsoft.BingTravel"
+    "Microsoft.WindowsReadingList"
+    "Microsoft.MixedReality.Portal"
+    "Microsoft.ScreenSketch"
+    "Microsoft.XboxGamingOverlay"
+)
+
+foreach ($app in $apps) {
+    Get-AppxPackage -Name $app -AllUsers | Remove-AppxPackage -AllUsers
+
+    Get-AppXProvisionedPackage -Online |
+        Where-Object DisplayName -EQ $app |
+        Remove-AppxProvisionedPackage -Online
+}
 
 # Online componenten (Windows Store etc)
 Get-AppXProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online -AllUsers
