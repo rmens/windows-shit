@@ -33,5 +33,5 @@ CALL sudo.bat powershell.exe -executionpolicy unrestricted -file "C:\Windows\dep
 START C:\Windows\deploy\LGPO.exe /un C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\firefoxpol.pol
-CALL sudo.bat REG import C:\windows\deploy\debloat.reg
+REG import C:\windows\deploy\debloat.reg
 CALL sudo.bat C:\Windows\deploy\apps.bat
