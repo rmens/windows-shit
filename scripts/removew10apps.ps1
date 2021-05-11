@@ -58,6 +58,8 @@ $apps = @(
     "Microsoft.MixedReality.Portal"
     "Microsoft.ScreenSketch"
     "Microsoft.XboxGamingOverlay"
+    "Microsoft.Todos"
+    "Microsoft.MicrosoftMahjong"
     "Microsoft.549981C3F5F10" # Dit is cortana
     "*king.com.BubbleWitch3Saga*"
     "*king.com.CandyCrushSodaSaga*"
