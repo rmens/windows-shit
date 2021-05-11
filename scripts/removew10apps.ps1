@@ -66,7 +66,7 @@ $apps = @(
 )
 
 foreach ($app in $apps) {
-    Get-AppxPackage -Name $app -AllUsers | Remove-AppxPackage -AllUsers
+    Get-AppxPackage -Name $app | Remove-AppxPackage -AllUsers
 
     Get-AppXProvisionedPackage -Online |
         Where-Object DisplayName -EQ $app |
