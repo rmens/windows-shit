@@ -8,7 +8,7 @@ curl -o "C:\Users\All Users\Microsoft\Windows\Start Menu\Programs\StartUp\filer.
 curl -o C:\Windows\deploy\removew10apps.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/removew10apps.ps1 
 curl -o C:\Windows\deploy\lang.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/lang.ps1 
 curl -o C:\Windows\deploy\workgroup.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/workgroup.ps1 
-curl -o C:\Windows\deploy\removeod.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/remove_onedrive_w10.bat 
+curl -o C:\Windows\deploy\remove_onedrive_w10.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/remove_onedrive_w10.ps1
 curl -o C:\Windows\deploy\users.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/users.bat 
 curl -o C:\Windows\deploy\LGPO.exe https://raw.githubusercontent.com/rmens/windows-shit/master/bin/LGPO.exe 
 curl -o C:\Windows\deploy\userpol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/userpol.txt 
@@ -29,7 +29,7 @@ CALL sudo.bat powershell.exe -executionpolicy bypass -file "C:\Windows\deploy\wo
 CALL sudo.bat C:\Windows\deploy\power.bat
 CALL sudo.bat C:\Windows\deploy\users.bat
 CALL sudo.bat C:\Windows\deploy\time.bat
-CALL sudo.bat C:\Windows\deploy\removeod.bat
+CALL sudo.bat powershell.exe -executionpolicy bypass -file "C:\Windows\deploy\remove_onedrive_w10.ps1"
 START C:\Windows\deploy\LGPO.exe /un C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\firefoxpol.pol
