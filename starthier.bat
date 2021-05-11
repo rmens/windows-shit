@@ -6,7 +6,6 @@ curl -o C:\Windows\deploy\time.bat https://raw.githubusercontent.com/rmens/windo
 curl -o C:\Windows\deploy\apps.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/apps.bat 
 curl -o "C:\Users\All Users\Microsoft\Windows\Start Menu\Programs\StartUp\filer.bat" https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/filer.bat 
 curl -o C:\Windows\deploy\removew10apps.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/removew10apps.ps1 
-curl -o C:\Windows\deploy\lang.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/lang.ps1 
 curl -o C:\Windows\deploy\workgroup.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/workgroup.ps1 
 curl -o C:\Windows\deploy\remove_onedrive_w10.ps1 https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/remove_onedrive_w10.ps1
 curl -o C:\Windows\deploy\users.bat https://raw.githubusercontent.com/rmens/windows-shit/master/scripts/users.bat 
