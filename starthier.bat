@@ -25,12 +25,12 @@ curl -o C:\Windows\deploy\debloat.reg https://raw.githubusercontent.com/rmens/wi
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\userpol.txt /w C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\syspol.txt /w C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\firefoxpol.txt /w C:\Windows\deploy\firefoxpol.pol
-CALL sudo.bat powershell.exe -executionpolicy bypass -file "C:\Windows\deploy\removew10apps.ps1"
-CALL sudo.bat powershell.exe -executionpolicy bypass -file "C:\Windows\deploy\workgroup.ps1"
+CALL sudo.bat powershell.exe -executionpolicy unrestricted -file "C:\Windows\deploy\removew10apps.ps1"
+CALL sudo.bat powershell.exe -executionpolicy unrestricted -file "C:\Windows\deploy\workgroup.ps1"
 CALL sudo.bat C:\Windows\deploy\power.bat
 CALL sudo.bat C:\Windows\deploy\users.bat
 CALL sudo.bat C:\Windows\deploy\time.bat
-CALL sudo.bat powershell.exe -executionpolicy bypass -file "C:\Windows\deploy\remove_onedrive_w10.ps1"
+CALL sudo.bat powershell.exe -executionpolicy unrestricted -file "C:\Windows\deploy\remove_onedrive_w10.ps1"
 START C:\Windows\deploy\LGPO.exe /un C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\firefoxpol.pol
