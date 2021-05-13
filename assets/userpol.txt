@@ -142,6 +142,11 @@ Software\Policies\Microsoft\WindowsStore
 RemoveWindowsStore
 DWORD:1
 
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+HideSCAMeetNow
+DWORD:1
+
 ; PARSING COMPLETED.
 ; ----------------------------------------------------------------------
 
