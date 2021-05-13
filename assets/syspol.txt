@@ -1,6 +1,11 @@
 ; ----------------------------------------------------------------------
 ; PARSING Computer POLICY
-; Source file:  C:\Users\Public\gpo\registry.pol
+; Source file:  C:\Registry.pol
+
+Computer
+Software\Microsoft\Windows\CurrentVersion\Policies\System
+HideFastUserSwitching
+DWORD:1
 
 Computer
 Software\Policies\Microsoft\MicrosoftEdge\Main
@@ -11,6 +16,36 @@ Computer
 Software\Policies\Microsoft\Windows\OneDrive
 DisableFileSyncNGSC
 DWORD:1
+
+Computer
+Software\Policies\Microsoft\Windows\OneDrive
+DisableFileSync
+DWORD:1
+
+Computer
+Software\Policies\Microsoft\Windows\Windows Search
+DisableWebSearch
+DWORD:1
+
+Computer
+Software\Policies\Microsoft\Windows\Windows Search
+ConnectedSearchUseWeb
+DWORD:0
+
+Computer
+Software\Policies\Microsoft\Windows\Windows Search
+AllowCortana
+DWORD:0
+
+Computer
+Software\Policies\Microsoft\Windows\Windows Search
+AllowCortanaAboveLock
+DWORD:0
+
+Computer
+Software\Policies\Microsoft\Windows\Windows Search
+AllowCloudSearch
+DELETE
 
 Computer
 Software\Policies\Microsoft\Windows\WindowsUpdate
@@ -107,11 +142,5 @@ Software\Policies\Microsoft\Windows\WindowsUpdate\AU
 AllowMUUpdateService
 DELETE
 
-Computer
-Software\Microsoft\Windows\CurrentVersion\Policies\System
-HideFastUserSwitching
-DWORD:1
-
 ; PARSING COMPLETED.
 ; ----------------------------------------------------------------------
-
