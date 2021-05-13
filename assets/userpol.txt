@@ -1,6 +1,6 @@
 ; ----------------------------------------------------------------------
 ; PARSING User POLICY
-; Source file:  {B870B5EB-9854-440F-B836-E405768791E8}\DomainSysvol\gpo\user\registry.pol
+; Source file:  C:\Registry.pol
 
 User
 Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop
@@ -48,6 +48,16 @@ NoThemesTab
 DWORD:1
 
 User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+HideSCAMeetNow
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoSearchInternetInStartMenu
+DWORD:1
+
+User
 Software\Microsoft\Windows\CurrentVersion\Policies\System
 Wallpaper
 SZ:c:\\windows\\deploy\\wallpaper.png
@@ -83,6 +93,11 @@ Check_If_Default
 DWORD:1
 
 User
+Software\Policies\Microsoft\Internet Explorer\SQM
+DisableCustomerImprovementProgram
+DWORD:0
+
+User
 Software\Policies\Microsoft\UEV\Agent\Configuration\Applications
 MicrosoftOffice2013Win32.OneDrive
 DWORD:0
@@ -101,6 +116,11 @@ User
 Software\Policies\Microsoft\UEV\Agent\Configuration\Applications
 MicrosoftOffice2016Win64.OneDrive
 DWORD:0
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+DisableWindowsSpotlightFeatures
+DWORD:1
 
 User
 Software\Policies\Microsoft\Windows\Control Panel\Desktop
@@ -142,11 +162,5 @@ Software\Policies\Microsoft\WindowsStore
 RemoveWindowsStore
 DWORD:1
 
-User
-Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
-HideSCAMeetNow
-DWORD:1
-
 ; PARSING COMPLETED.
 ; ----------------------------------------------------------------------
-
