@@ -12,7 +12,8 @@ curl -o C:\Windows\deploy\users.bat https://raw.githubusercontent.com/rmens/wind
 curl -o C:\Windows\deploy\LGPO.exe https://raw.githubusercontent.com/rmens/windows-shit/master/bin/LGPO.exe 
 curl -o C:\Windows\deploy\userpol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/userpol.txt 
 curl -o C:\Windows\deploy\syspol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/syspol.txt 
-curl -o C:\Windows\deploy\firefoxpol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/firefoxpol.txt 
+curl -o C:\Windows\deploy\firefoxpol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/firefoxpol.txt
+curl -o C:\Windows\deploy\edgepol.txt https://raw.githubusercontent.com/rmens/windows-shit/master/assets/edgepol.txt 
 curl -o C:\Windows\deploy\start.xml https://raw.githubusercontent.com/rmens/windows-shit/master/assets/start.xml
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 curl -o C:\Windows\deploy\wallpaper.png https://raw.githubusercontent.com/rmens/windows-shit/master/assets/wallpaper.png
@@ -23,6 +24,7 @@ curl -o C:\Windows\deploy\tv.reg https://raw.githubusercontent.com/rmens/windows
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\userpol.txt /w C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\syspol.txt /w C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\firefoxpol.txt /w C:\Windows\deploy\firefoxpol.pol
+START C:\Windows\deploy\LGPO.exe /r C:\Windows\deploy\edgepol.txt /w C:\Windows\deploy\edgepol.pol
 CALL sudo.bat powershell.exe -executionpolicy unrestricted -file "C:\Windows\deploy\removew10apps.ps1"
 CALL sudo.bat powershell.exe -executionpolicy unrestricted -file "C:\Windows\deploy\workgroup.ps1"
 CALL sudo.bat C:\Windows\deploy\power.bat
@@ -32,4 +34,5 @@ CALL sudo.bat powershell.exe -executionpolicy unrestricted -file "C:\Windows\dep
 START C:\Windows\deploy\LGPO.exe /un C:\Windows\deploy\userpol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\syspol.pol
 START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\firefoxpol.pol
+START C:\Windows\deploy\LGPO.exe /m C:\Windows\deploy\edgepol.pol
 CALL sudo.bat C:\Windows\deploy\apps.bat
